@@ -1,0 +1,374 @@
+*{
+    box-sizing: border-box;
+}
+.whole{
+   margin-right: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(215, 237, 19);
+
+}
+#ppp{
+    text-align: center;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(5, 207, 153);
+    color: black;
+}
+.brand-tittle{
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+.navbar-links ul{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+.navbar-links li{
+    list-style: none;
+}
+.navbar-links li a{
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    display: block;
+}
+.navbar-links li:hover{
+    background-color: rgb(124, 14, 14);
+}
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+    font-weight: 600;
+    
+    
+}
+
+
+
+@media screen and (max-width:600px){
+    .toggle-button{
+        display: flex;
+    }
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links li{
+        text-align: center;
+    }
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active{
+        display: flex;
+    }
+}
+
+
+
+/*  body starts here  */
+.body-up{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    height: 450px;
+    background-color: rgb(14, 95, 98);
+
+    
+}
+.kunteenar{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url(./images/kunteenar2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.about-we{
+    color: white;
+    text-align: center;
+    padding-top: 75px;
+    font-weight: 600;
+    font-style: italic;
+}
+.features-cards{
+    padding-top: 15px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    
+   
+    
+}
+.features-text{
+    color: white;
+    text-align: center;
+}
+.cards1{
+    background-color:rgb(212, 205, 230);
+    height: 300px;
+   
+}
+.cards-content{
+    text-align: center;
+} 
+
+.koloo{
+   text-align: center;
+   background-color: chartreuse;
+   font-size: 40px;
+}
+
+@media screen and (max-width:600px){
+    .body-up{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(14, 95, 98);
+    }
+    .body-features{
+        background-color: rgb(14, 95, 98);
+    }
+    .features-cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    .cards1{
+        height: 200px;
+    }
+}
+
+/* offer starting here */
+
+.offer-main{
+    margin-top: 20px;
+    background-color: rgb(14, 95, 98);
+    border: 0px solid;
+    border-radius: 5px;
+    
+    
+   
+}
+.offer-mini{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    justify-content: space-between;
+    
+    background-color: rgb(15, 126, 130);
+    color: white;
+    border: 0px solid;
+    border-radius: 5px;
+    
+    
+}
+.off-mini1{
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url(./images/log2.jpg);
+    background-size: cover;
+    font-style: italic;
+}
+.form-all{
+   width: 600px;
+    text-align: center;
+}
+.formdiv{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    width: 600px;
+    gap: 10px;
+    
+}
+#txt{
+    width: 100%;
+    height: 30px;
+}
+#msg{
+    width: 100%;
+    height: 40px;
+}
+#btns{
+    float: right;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    
+}
+
+
+
+.offer-mini3{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+.form-in{
+    height: 35px;
+    width: 300px;
+}
+.form-select{
+    width: 308px;
+    height: 40px;
+}
+
+/*  offer media starting here  */
+/*
+@media screen and (max-width:600px){
+    .offer-main{
+        top: 100px;
+        background-color: rgb(14, 95, 98);
+        border: 0px solid;
+        border-radius: 5px;
+        
+        
+       
+    }
+    .offer-mini{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        
+        margin-top: 200px;
+        
+    }
+    
+    
+    
+    .formdiv{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        justify-content: space-between;
+        
+        text-align: center;
+    }
+    #txt{
+        width: 170px;
+        height: 20px;
+        background-color: rgb(9, 75, 78);
+        font-style: italic;
+        
+    }
+    #msg{
+        width: 350px;
+        height: 90px;
+        background-color: rgb(9, 75, 78);
+    }
+    #btns{
+      margin-right: 40%;
+      margin-top: 10px;
+      border: 0px solid;
+      background-color: rgb(9, 75, 78);
+      border-radius: 10px;
+      color: white;
+      font-weight: 600;
+      font-style: italic;
+      
+    }
+}
+ */
+
+/*  footer starting from here  */
+
+
+.footer-main{
+    
+    background-color: rgb(14, 95, 98);
+    text-align: center;
+    margin-top: 15px;
+    border: 0px solid;
+    border-radius: 5px;
+    
+}
+.footer-all{
+    padding-top: 15px;
+    color: white;
+    
+}
+.divs{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+.footer-contact{
+    background-color: rgb(14, 95, 98);
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+
+@media screen and (max-width:600px){
+    .footer-main{
+        margin-top: 300px;
+        margin-bottom: 20px;
+    }
+    .footer-c2{
+        font-size: 10px;
+    }
+    .whole{
+        margin-left: 0px;
+    }
+}
+
+/* for tablet media query  */
+
+
+    
+/*
+@media screen and (max-width:490px){
+    .offer-main{
+        
+        margin-bottom: 100px;
+    }
+    .offer-mini{
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    .formdiv{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    #msg{
+        height: 50px;
+    }
+    .form-all{
+        width: 400px;
+    }
+    .off-mini2{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+*/
+
+
