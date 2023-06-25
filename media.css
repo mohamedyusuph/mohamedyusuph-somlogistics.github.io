@@ -1,0 +1,93 @@
+@media screen and (max-width:963px){
+    .body-up{
+        display: flex;
+        flex-direction: column;
+    }
+    .offer-main{
+        margin-top: 230px;
+    }
+    .cards1{
+        height: 250px;
+    }
+    .form-all{
+        width: 500px;
+         
+    }
+}
+
+@media screen and (max-width:600px){
+    .offer-main{
+        margin-top: 500px;
+    }
+    .offer-mini{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .form-all{
+       width: 400px;
+       
+       margin: auto;
+    }
+    .formdiv{
+        width: 400px;
+    }
+    .footer-main{
+        margin-top: 20px;
+    }
+    
+}
+@media screen and (max-width:430px){
+    .offer-main{
+        margin-top: 580px;
+    }
+    .form-all{
+        width: 300px;
+        margin: auto;
+        
+    }
+    .formdiv{
+        width: 300px;
+    }
+}
+@media screen and (max-width:350px){
+    .offer-main{
+        margin-top: 600px;
+    }
+}
+@media screen and (max-width:320px){
+       .offer-main{
+        margin-top: 620px;
+       }
+       .form-all{
+            width: 200px;
+            margin: auto;
+       }
+       .formdiv{
+        width: 200px;
+       }
+       #txt{
+        height: 20px;
+       }
+}
+@media screen and (max-width:285px){
+    .offer-main{
+        margin-top: 640px;
+    }
+    #txt{
+        height: 20px;
+    }
+}
+@media screen and (max-width:303px){
+    .cards1{
+        height: 320px;
+    }
+    .offer-main{
+        margin-top: 720px;
+    }
+}
+@media screen and (max-width:340px){
+    .footer-contact{
+        gap: 10px;
+       }
+}
